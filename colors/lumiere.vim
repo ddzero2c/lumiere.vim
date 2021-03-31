@@ -511,9 +511,9 @@ augroup END
 " }}}
 "
 " LSP: {{{
-  call s:HL('LspReferenceRead', s:gray5, s:ui5)
-  call s:HL('LspReferenceWrite', s:gray5, s:ui5)
-  call s:HL('LspReferenceText', s:gray5, s:ui5)
+  call s:HL('LspReferenceRead', s:gray28, s:ui5)
+  call s:HL('LspReferenceWrite', s:gray28, s:ui5)
+  call s:HL('LspReferenceText', s:gray28, s:ui5)
 " }}}
 
 " Asynchronous Lint Engine: {{{
