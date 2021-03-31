@@ -218,7 +218,7 @@ augroup END
   call s:HL('MatchParen', s:blue, s:bluehl, s:bold)
 
   " Concealed element: \lambda → λ
-  call s:HL('Conceal', s:gray5, s:bold)
+  call s:HL('Conceal', s:gray1, s:bold)
 
   " Line number of CursorLine
   call s:HL('CursorLineNr', s:gray5, s:none, s:bold)
