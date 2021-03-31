@@ -511,7 +511,7 @@ augroup END
 " }}}
 "
 " LSP: {{{
-  call s:HL('LspReferenceRead', s:fg, s:bg, s:inverse)
+  call s:HL('LspReferenceRead', s:white, s:gray20, s:none)
 " }}}
 
 " Asynchronous Lint Engine: {{{
