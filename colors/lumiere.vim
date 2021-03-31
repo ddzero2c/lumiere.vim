@@ -205,7 +205,7 @@ augroup END
 
 " Normal UI {{{
   " Normal text
-  call s:HL('Normal', s:fg, s:none)
+  call s:HL('Normal', s:black, s:none)
   if g:lumiere_dim_inactive_windows == 1
     call s:HL('NormalNC', s:fg, s:bgNC)
   endif
@@ -353,10 +353,9 @@ augroup END
 " }}}
 
 " Syntax Highlighting: {{{
-  call s:HL('Special', s:fg, s:none, s:italic)
-  call s:HL('Comment', s:fg, s:bg, s:italic . s:inverse)
-  " TODO: a todo tag
-  call s:HL('Todo', s:fg, s:bg, s:bold . s:italic . s:inverse)
+  call s:HL('Special', s:black, s:none, s:italic)
+  call s:HL('Comment', s:fg, s:bg, s:italic)
+  " TODO: a todo tag call s:HL('Todo', s:fg, s:bg, s:bold . s:italic . s:inverse)
   " NOTE: a note tag
   " ERROR: a error tag
   " FIXME: a fixme tag
@@ -381,13 +380,13 @@ augroup END
   call s:HL('Exception', s:fg, s:none, s:bold)
 
   " sizeof, "+", "*", etc.
-  call s:HL('Operator', s:fg, s:none)
+  call s:HL('Operator', s:blue, s:none)
 
   " Any other keyword
   call s:HL('Keyword', s:fg, s:none, s:bold)
 
   " Variable name
-  call s:HL('Identifier', s:fg, s:none, s:italic)
+  call s:HL('Identifier', s:black, s:none, s:italic)
 
   " Function name
   call s:HL('Function', s:fg, s:none, s:italic)
@@ -415,13 +414,13 @@ augroup END
   call s:HL('Character', s:fg, s:none, s:italic)
 
   " String constant: "this is a string"
-  call s:HL('String', s:fg, s:none, s:italic)
+  call s:HL('String', s:gray5, s:ui2, s:italic)
 
   " Boolean constant: TRUE, FALSE
   call s:HL('Boolean', s:fg, s:none, s:bold)
 
   " Number constant: 234, 0xff
-  call s:HL('Number', s:fg, s:none, s:italic)
+  call s:HL('Number', s:blue, s:none, s:italic)
 
   " Floating point constant: 2.3e10
   call s:HL('Float', s:fg, s:none, s:italic)
