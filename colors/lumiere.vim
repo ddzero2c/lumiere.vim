@@ -511,9 +511,9 @@ augroup END
 " }}}
 "
 " LSP: {{{
-  hi! link LspReferenceRead CursorLine
-  hi! link LspReferenceWrite CursorLine
-  hi! link LspReferenceText CursorLine
+  hi! link LspReferenceRead MyTodo
+  hi! link LspReferenceWrite MyTodo
+  hi! link LspReferenceText MyTodo
 " }}}
 
 " Asynchronous Lint Engine: {{{
