@@ -505,6 +505,10 @@ augroup END
   call s:HL('SignifySignDelete', s:gray10, s:none)
 " }}}
 
+" hi IndentBlanklineContextChar guifg=#707070 ctermfg=242 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+  call s:HL('IndentBlanklineChar', s:gray10, s:none)
+  call s:HL('IndentBlanklineContextChar', s:gray20, s:none)
+
 " Asynchronous Lint Engine: {{{
   call s:HL('ALEErrorBg', s:none, s:bgError)
   call s:HL('ALEErrorHl', s:none, s:lightred, s:none)
