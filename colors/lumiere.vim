@@ -511,7 +511,9 @@ augroup END
 " }}}
 "
 " LSP: {{{
-  call s:HL('LspReferenceRead', s:white, s:gray20, s:none)
+  hi! link LspReferenceRead CursorLine
+  hi! link LspReferenceWrite CursorLine
+  hi! link LspReferenceText CursorLine
 " }}}
 
 " Asynchronous Lint Engine: {{{
