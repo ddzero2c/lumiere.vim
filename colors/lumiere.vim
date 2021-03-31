@@ -505,9 +505,14 @@ augroup END
   call s:HL('SignifySignDelete', s:gray10, s:none)
 " }}}
 
-" hi IndentBlanklineContextChar guifg=#707070 ctermfg=242 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+" IndentBlankLine: {{{
   call s:HL('IndentBlanklineChar', s:gray20, s:none)
   call s:HL('IndentBlanklineContextChar', s:gray10, s:none)
+" }}}
+"
+" LSP: {{{
+  call s:HL('LspReferenceRead', s:fg, s:bg, s:inverse)
+" }}}
 
 " Asynchronous Lint Engine: {{{
   call s:HL('ALEErrorBg', s:none, s:bgError)
