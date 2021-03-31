@@ -353,7 +353,7 @@ augroup END
 " }}}
 
 " Syntax Highlighting: {{{
-  call s:HL('Special', s:black, s:none, s:italic)
+  call s:HL('Special', s:black, s:none, s:bold)
   call s:HL('Comment', s:fg, s:bg, s:italic)
   " TODO: a todo tag call s:HL('Todo', s:fg, s:bg, s:bold . s:italic . s:inverse)
   " NOTE: a note tag
@@ -386,7 +386,7 @@ augroup END
   call s:HL('Keyword', s:fg, s:none, s:bold)
 
   " Variable name
-  call s:HL('Identifier', s:black, s:none, s:italic)
+  call s:HL('Identifier', s:black, s:none, s:bold)
 
   " Function name
   call s:HL('Function', s:fg, s:none, s:italic)
