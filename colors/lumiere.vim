@@ -514,6 +514,11 @@ augroup END
   call s:HL('LspReferenceRead', s:gray28, s:ui5)
   call s:HL('LspReferenceWrite', s:gray28, s:ui5)
   call s:HL('LspReferenceText', s:gray28, s:ui5)
+  hi! link CocErrorSign ErrorMsg
+  hi! link CocWarningSign WarningMsg
+  hi! link CocInfoSign InfoMsg
+  hi! link CocHintSign HintMsg
+  hi! link CocHighlightText LspReferenceText
 " }}}
 
 " Asynchronous Lint Engine: {{{
