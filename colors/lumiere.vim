@@ -444,7 +444,7 @@ augroup END
   " Popup menu: selected item
   call s:HL('PmenuSel', s:white, s:fg, s:bold)
   " Popup menu: scrollbar
-  call s:HL('PmenuSbar', s:none, s:ui5)
+  call s:HL('PmenuSbar', s:none, s:bg)
   " Popup menu: scrollbar thumb
   call s:HL('PmenuThumb', s:none, s:fg)
 " }}}
