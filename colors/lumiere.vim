@@ -482,6 +482,18 @@ augroup END
   call s:HL('diffLine', s:magenta, s:magentahl)
 " }}}
 
+" GitSign: {{{
+  hi! link GitSignsAdd diffAdded
+  hi! link GitSignsAddNr diffAdded
+  hi! link GitSignsAddLn diffAdded
+  hi! link GitSignsChange diffChanged
+  hi! link GitSignsChangeNr diffChanged
+  hi! link GitSignsChangeLn diffChanged
+  hi! link GitSignsDelete diffRemoved
+  hi! link GitSignsDeleteNr diffRemoved
+  hi! link GitSignsDeleteLn diffRemoved
+" }}}
+
 " GITCOMMIT: {{{
   call s:HL('gitcommitBranch', s:gray28, s:fg, s:bold)
   call s:HL('gitcommitHeader', s:gray28, s:fg)
