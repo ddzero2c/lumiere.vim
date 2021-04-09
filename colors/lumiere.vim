@@ -238,7 +238,7 @@ augroup END
 
   call s:HL('Underlined', s:fg, s:none, s:underline)
 
-  call s:HL('StatusLine', s:ui0, s:none, s:underline)
+  call s:HL('StatusLine', s:ui0, s:gray25, s:none)
   " NOTE: equal StatusLine and StatusLineNC cause statusline spacing to bug out
   " SOURCE: https://tinyurl.com/yavjy26z
   call s:HL('StatusLineNC', s:ui7, s:none, s:underline . s:italic)
