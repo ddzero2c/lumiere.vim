@@ -261,15 +261,17 @@ augroup END
   call s:HL('Title', s:fg, s:none, s:bold)
 
   " " Error messages on the command line
-  call s:HL('ErrorMsg', s:fg, s:none, s:bold)
+  call s:HL('ErrorMsg', s:lightred, s:none, s:bold)
   " " More prompt: -- More --
   call s:HL('MoreMsg', s:blue, s:none, s:bold)
   " " Current mode message: -- INSERT --
   call s:HL('ModeMsg', s:blue, s:none, s:bold)
+  call s:HL('InfoMsg', s:blue, s:none, s:none)
+  call s:HL('HintMsg', s:blue, s:none, s:none)
   " " 'Press enter' prompt and yes/no questions
   call s:HL('Question', s:green, s:none, s:bold)
   " " Warning messages
-  call s:HL('WarningMsg', s:red, s:none, s:bold)
+  call s:HL('WarningMsg', s:orange, s:none, s:bold)
 " }}}
 
 
