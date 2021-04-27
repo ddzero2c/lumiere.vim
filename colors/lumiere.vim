@@ -598,6 +598,7 @@ hi def link MyTodo Todo
   hi! link TSNamespace           Include " For identifiers referring to modules and namespaces.
   hi! link TSNumber              Number " For integers
   hi! link TSOperator            Operator " For any operator: `+`, but also `->` and `*` in C
+  hi! link TSKeywordOperator     Operator " For any operator: `new`
   hi! link TSParameter           Identifier " For parameters of a function.
   hi! link TSParameterReference  Identifier " For references to parameters of a function.
   hi! link TSProperty            Identifier " Same as `TSField`.
