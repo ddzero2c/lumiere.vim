@@ -385,7 +385,7 @@ augroup END
   call s:HL('Operator', s:blue, s:none)
 
   " Any other keyword
-  call s:HL('Keyword', s:lightblue, s:none, s:bold)
+  call s:HL('Keyword', s:blue, s:none, s:bold)
 
   " Variable name
   call s:HL('Identifier', s:black, s:none, s:none)
@@ -398,7 +398,7 @@ augroup END
   call s:HL('PreProc', s:fg, s:none, s:bold)
 
   " Preprocessor #include
-  call s:HL('Include', s:fg, s:none, s:italic)
+  call s:HL('Include', s:blue, s:none, s:italic)
 
   " Preprocessor #define
   call s:HL('Define', s:fg, s:none, s:bold)
