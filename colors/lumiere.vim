@@ -385,7 +385,7 @@ augroup END
   call s:HL('Operator', s:blue, s:bold)
 
   " Any other keyword
-  call s:HL('Keyword', s:blue, s:none, s:bold)
+  call s:HL('Keyword', s:black, s:none, s:bold)
 
   " Variable name
   call s:HL('Identifier', s:black, s:none, s:none)
