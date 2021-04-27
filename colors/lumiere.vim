@@ -382,7 +382,7 @@ augroup END
   call s:HL('Exception', s:fg, s:none, s:bold)
 
   " sizeof, "+", "*", etc.
-  call s:HL('Operator', s:lightblue, s:bold)
+  call s:HL('Operator', s:blue, s:bold)
 
   " Any other keyword
   call s:HL('Keyword', s:blue, s:none, s:bold)
