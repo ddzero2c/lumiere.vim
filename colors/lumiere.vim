@@ -388,7 +388,7 @@ augroup END
   call s:HL('Keyword', s:blue, s:none, s:bold)
 
   " Variable name
-  call s:HL('Identifier', s:fg, s:none, s:underline)
+  call s:HL('Identifier', s:black, s:none, s:none)
 
   " Function name
   call s:HL('Function', s:fg, s:none, s:italic)
