@@ -382,10 +382,10 @@ augroup END
   call s:HL('Exception', s:fg, s:none, s:bold)
 
   " sizeof, "+", "*", etc.
-  call s:HL('Operator', s:blue, s:none)
+  call s:HL('Operator', s:lightblue, s:none)
 
   " Any other keyword
-  call s:HL('Keyword', s:black, s:none, s:bold)
+  call s:HL('Keyword', s:blue, s:none, s:bold)
 
   " Variable name
   call s:HL('Identifier', s:black, s:none, s:none)
@@ -398,7 +398,7 @@ augroup END
   call s:HL('PreProc', s:fg, s:none, s:bold)
 
   " Preprocessor #include
-  call s:HL('Include', s:black, s:none, s:italic)
+  call s:HL('Include', s:blue, s:none, s:italic)
 
   " Preprocessor #define
   call s:HL('Define', s:fg, s:none, s:bold)
@@ -422,10 +422,10 @@ augroup END
   call s:HL('Boolean', s:fg, s:none, s:bold)
 
   " Number constant: 234, 0xff
-  call s:HL('Number', s:blue, s:none, s:italic)
+  call s:HL('Number', s:lightblue, s:none, s:italic)
 
   " Floating point constant: 2.3e10
-  call s:HL('Float', s:fg, s:none, s:italic)
+  call s:HL('Float', s:lightblue, s:none, s:italic)
 
   " Generic type
   call s:HL('Type', s:fg, s:none, s:bold)
