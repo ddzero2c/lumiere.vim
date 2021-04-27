@@ -385,10 +385,10 @@ augroup END
   call s:HL('Operator', s:blue, s:none)
 
   " Any other keyword
-  call s:HL('Keyword', s:fg, s:none, s:bold)
+  call s:HL('Keyword', s:fg, s:none, s:none)
 
   " Variable name
-  call s:HL('Identifier', s:black, s:none, s:bold)
+  call s:HL('Identifier', s:black, s:none, s:none)
 
   " Function name
   call s:HL('Function', s:fg, s:none, s:italic)
@@ -568,6 +568,57 @@ augroup lumiere_todo
           \ containedin=.*Comment,vimCommentTitle
 augroup END
 hi def link MyTodo Todo
+" }}}
+
+" Treesitter: {{{
+  hi! link TSAnnotation          PreProc " For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
+  hi! link TSAttribute           PreProc " (unstable) TODO: docs
+  hi! link TSBoolean             Boolean " For booleans
+  hi! link TSCharacter           Character " For characters
+  hi! link TSComment             Comment " For comments
+  hi! link TSConditional         Conditional " For keywords related to conditionnals
+  hi! link TSConstant            Constant " For constants
+  hi! link TSConstBuiltin        Special " For constant that are built in the language: `nil` in Lua
+  hi! link TSConstMacro          Define " For constants that are defined by macros: `NULL` in C
+  hi! link TSConstructor         Special " For constructor calls and definitions: `{}` in Lua, and Java constructors
+  hi! link TSEmphasis            Italic " For text to be represented with emphasis.
+  hi! link TSError               Error " For syntax/parser errors
+  hi! link TSException           Exception " For exception related keywords.
+  hi! link TSField               Identifier " For fields
+  hi! link TSFloat               Float " For floats
+  hi! link TSFunction            Function " For function (calls and definitions
+  hi! link TSFuncBuiltin         Special " For builtin functions: `table.insert` in Lua
+  hi! link TSFuncMacro           Macro " For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+  hi! link TSInclude             Include " For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+  hi! link TSKeyword             Keyword " For keywords that don't fall in other categories.
+  hi! link TSKeywordFunction     Keyword " For keywords used to define a fuction.
+  hi! link TSLabel               Label " For labels: `label:` in C and `:label:` in Lua
+  hi! link TSLiteral             String " Literal text.
+  hi! link TSMethod              Function " For method calls and definitions.
+  hi! link TSNamespace           Include " For identifiers referring to modules and namespaces.
+  hi! link TSNumber              Number " For integers
+  hi! link TSOperator            Operator " For any operator: `+`, but also `->` and `*` in C
+  hi! link TSParameter           Identifier " For parameters of a function.
+  hi! link TSParameterReference  Identifier " For references to parameters of a function.
+  hi! link TSProperty            Identifier " Same as `TSField`.
+  hi! link TSPunctBracket        Delimiter " For brackets and parens.
+  hi! link TSPunctDelimiter      Delimiter " For delimiters ie: `.`
+  hi! link TSPunctSpecial        Delimiter " For special punctutation that does not fall in the catagories before.
+  hi! link TSRepeat              Repeat " For keywords related to loops
+  hi! link TSString              String " For strings.
+  hi! link TSStringEscape        SpecialChar " For escape characters within a string.
+  hi! link TSStringRegex         String " For regexes.
+  hi! link TSStrong              bold " For text to be represented with strong.
+  hi! link TSTag                 Label " Tags like html tag names.
+  hi! link TSTagDelimiter        Label " Tag delimiter like `<` `>` `/`
+"  -- TSText               = { fg = yellow },  -- For strings considered text in a markup language.
+  hi! link TSTitle               Title " Text that is part of a title.
+  hi! link TSType                Type " For types.
+  hi! link TSTypeBuiltin         Type " For builtin types (you guessed it, right ?).
+  hi! link TSUnderline           Underlined " For underlined text?
+  hi! link TSURI                 Underlined " Any URI like a link or email.
+  hi! link TSVariable            Identifier " Any variable name that does not have another highlight.
+  hi! link TSVariableBuiltin     Special " Variable names that are defined by the languages, like `this` or `self`.
 " }}}
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker:
