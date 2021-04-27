@@ -205,7 +205,7 @@ augroup END
 
 " Normal UI {{{
   " Normal text
-  call s:HL('Normal', s:black, s:none)
+  call s:HL('Normal', s:fg, s:none)
   if g:lumiere_dim_inactive_windows == 1
     call s:HL('NormalNC', s:fg, s:bgNC)
   endif
