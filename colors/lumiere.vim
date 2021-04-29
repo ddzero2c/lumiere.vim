@@ -533,6 +533,27 @@ augroup END
   hi! link CocInfoSign InfoMsg
   hi! link CocHintSign HintMsg
   hi! link CocHighlightText LspReferenceText
+
+  hi! link LspDiagnosticsDefaultError           ErrorMsg
+  hi! link LspDiagnosticsDefaultWarning         WarningMsg
+  hi! link LspDiagnosticsDefaultInformation     InfoMsg
+  hi! link LspDiagnosticsDefaultHint            HintMsg
+  hi! link LspDiagnosticsVirtualTextError       ErrorMsg
+  hi! link LspDiagnosticsVirtualTextWarning     WarningMsg
+  hi! link LspDiagnosticsVirtualTextInformation InfoMsg
+  hi! link LspDiagnosticsVirtualTextHint        HintMsg
+  hi! link LspDiagnosticsUnderlineError         ErrorMsg
+  hi! link LspDiagnosticsUnderlineWarning       WarningMsg
+  hi! link LspDiagnosticsUnderlineInformation   InfoMsg
+  hi! link LspDiagnosticsUnderlineHint          HintMsg
+  hi! link LspDiagnosticsFloatingError          ErrorMsg
+  hi! link LspDiagnosticsFloatingWarning        WarningMsg
+  hi! link LspDiagnosticsFloatingInformation    InfoMsg
+  hi! link LspDiagnosticsFloatingHint           HintMsg
+  hi! link LspDiagnosticsSignError              ErrorMsg
+  hi! link LspDiagnosticsSignWarning            WarningMsg
+  hi! link LspDiagnosticsSignInformation        InfoMsg
+  hi! link LspDiagnosticsSignHint               HintMsg
 " }}}
 
 " Asynchronous Lint Engine: {{{
